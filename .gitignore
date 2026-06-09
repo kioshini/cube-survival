@@ -1,0 +1,11 @@
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+[Db]in/
+[Ob]j/
+.idea/
+*.log
+*.tmp

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "sword_path",
+    "name": "Путь мечника",
+    "description": "Обычный удар становится мощным ударом мечом: урон 3, дальность 75, целей 2.",
+    "branch": "Sword",
+    "cost": 1,
+    "effectId": "apply_sword_path"
+  },
+  {
+    "id": "wide_slash",
+    "name": "Широкий взмах",
+    "description": "Увеличивает дальность ближнего боя и число целей на 1.",
+    "branch": "Sword",
+    "cost": 1,
+    "effectId": "improve_sword_reach",
+    "requiredSkillId": "sword_path"
+  },
+  {
+    "id": "blade_tempo",
+    "name": "Темп клинка",
+    "description": "Увеличивает урон и скорость атаки ближнего боя.",
+    "branch": "Sword",
+    "cost": 1,
+    "effectId": "improve_sword_tempo",
+    "requiredSkillId": "wide_slash"
+  },
+  {
+    "id": "blood_path",
+    "name": "Кровавый путь",
+    "description": "Урон ближнего боя 3. Лечение 1 ХП при убийстве в ближнем бою.",
+    "branch": "Vampire",
+    "cost": 1,
+    "effectId": "apply_blood_path"
+  },
+  {
+    "id": "life_leech",
+    "name": "Похищение жизни",
+    "description": "Убийства ближним боем лечат сильнее, а урон растет.",
+    "branch": "Vampire",
+    "cost": 1,
+    "effectId": "improve_blood_leech",
+    "requiredSkillId": "blood_path"
+  },
+  {
+    "id": "blood_body",
+    "name": "Кровавое тело",
+    "description": "Даёт больше максимум ХП и усиливает лечение от убийств.",
+    "branch": "Vampire",
+    "cost": 1,
+    "effectId": "improve_blood_body",
+    "requiredSkillId": "life_leech"
+  },
+  {
+    "id": "magic_path",
+    "name": "Путь магии",
+    "description": "Открывает автоматический арканный снаряд: урон 3, дальность 320.",
+    "branch": "Magic",
+    "cost": 1,
+    "effectId": "unlock_magic_weapon"
+  },
+  {
+    "id": "arcane_power",
+    "name": "Сила арканы",
+    "description": "Арканный снаряд бьет сильнее и летит дальше.",
+    "branch": "Magic",
+    "cost": 1,
+    "effectId": "improve_magic_power",
+    "requiredSkillId": "magic_path"
+  },
+  {
+    "id": "mana_flow",
+    "name": "Поток маны",
+    "description": "Арканный снаряд стреляет чаще и летит быстрее.",
+    "branch": "Magic",
+    "cost": 1,
+    "effectId": "improve_magic_flow",
+    "requiredSkillId": "arcane_power"
+  },
+  {
+    "id": "gunner_path",
+    "name": "Путь стрелка",
+    "description": "Открывает автоматический пистолет: урон 2, быстрая стрельба, дальность 360.",
+    "branch": "Gunner",
+    "cost": 1,
+    "effectId": "unlock_gun_weapon"
+  },
+  {
+    "id": "quick_reload",
+    "name": "Быстрая перезарядка",
+    "description": "Пистолет стреляет чаще.",
+    "branch": "Gunner",
+    "cost": 1,
+    "effectId": "improve_gun_reload",
+    "requiredSkillId": "gunner_path"
+  },
+  {
+    "id": "heavy_rounds",
+    "name": "Тяжелые патроны",
+    "description": "Пистолет бьет сильнее и летит быстрее.",
+    "branch": "Gunner",
+    "cost": 1,
+    "effectId": "improve_gun_rounds",
+    "requiredSkillId": "quick_reload"
+  }
+]
